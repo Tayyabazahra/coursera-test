@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>   
+    @font-face {
+     font-family: Cardo;
+      font-family: Raleway;
+      src: local('Raleway Std');
+      src: local('Cardo Std');
+    }
+    body {
+      background-color: rgb(18 58 74);
+      font-family: Raleway,sans-serif;
+      font-weight:bold;
+    } 
+    
+  header {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top:0px;
+  margin-top: 0px;
+  right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  border-bottom: 2px white;
+  background-color: rgb(18 58 74);
+  height: 18vh;
+
+  }
+
+
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      right: 40px;
+      padding-left:50px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+      position: relative;
+    }
+
+    nav li a {
+      margin-left: 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    h1{
+        color:white;
+        font-size:50px;
+        padding-top:110px;
+        padding-left:60px;
+        float:left;
+        line-height: 1.3;
+    }
+    .email{
+        float: right;
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .animate{
+        float: right;
+        margin-right: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+
+  
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+.animate[src="comp.png"] {
+  animation: zoom-in 2s ease forwards;
+}
+
+    .journey{
+        text-align: left;
+        color: white;
+        padding-top:0px;
+        padding-left:60px;
+        float:left;
+        line-height: 2.8;
+        font-family :Georgia, Times, serif;
+        font-size: 25px;
+        font-weight:lighter;
+    }
+
+    button{
+    color: white;
+    background-color: orange;
+    padding: 18px;
+    width:390px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 30px; 
+    margin-top:20px; 
+    border-radius: 10px;
+    border:0px;
+  }
+
+  .email{
+    width:180px; 
+    background-color: black;
+    color: greenyellow;
+    padding-top: 0px;
+    margin-top:100px;
+    margin-right:88px;
+    margin-bottom:0px;
+    padding-left:10px;
+    padding-bottom:0px;
+    padding-right:0px;
+  }
+
+  .tech1 {
+    padding-top: 750px;
+    padding-left: 20px;padding-right: 20px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    font-family:'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:34px  
+  }
+
+  .tech2{
+    padding-top: 90px;
+    padding-left: 30px;padding-right: 20px;
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    font-size:18px; 
+    margin-bottom: 60px;
+    }
+   
+    figcaption {
+     display: block;
+     text-align: center;
+     margin-top: 5px;
+     color: white;
+     font-size: 13px;
+    }
+
+
+    .footer{
+      background-color: #222222;
+      color:grey;
+      margin-top: 40px;
+      margin-left:0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      height:600px;
+    }
+
+    footer h4{
+      font-weight: bold;
+      color:white;
+      font-size: 28px;
+      margin-top: 0px;
+      margin-left: 8px;
+      margin-right: 10px;
+    }
+     
+    footer div{
+      font-size: 15px;
+      line-height: 1.8;
+      margin-right : 58px;
+      margin-top : 60px;
+      margin-left: 60px;
+      font-weight: lighter;
+    }
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span style="color: #B580B5;;">Centillion</span>
+      <span style="color: darkgoldenrod">>_</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Connections</a></li>
+        <li><a href="#">Genius</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>
+    Microsoft Azure</br>
+    Office 365</br>
+    Sharepoint</br>
+    Code >-
+  </h1>
+  <span class="email">sales@centillion.com</span>
+  <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Centillion-Banner-2st.png"  alt="computer" width="550px" height="500px" style="margin-left: 40px;margin-top: 20px;margin-right:50px;float: right;">
+  
+  <p class="journey">Simplify your Journey with Centillion</br>
+  <button>Reserve My Free Consultation Today!</button></p>
+  <p class="tech1">A Technology Partner you can bank on</p>
+  <p class="tech2"> We are a leading technology services provider company and are ISO 9001 and OHSAS 18001 certified. Centillion develops world-class Portal, BI, Web and Mobile applications for customers across the globe.</p>
+  <div style="margin-top: 10px;">
+    <div style="display: inline-block; margin-top: 8px; ">
+      <figure>
+        <img src="https:\\centillion-ts.com\wp-content\uploads\2016\03\SharePoint-Centillion.png" height="100px" width="100px"  style="margin-left:160px;padding-left:0px ;padding-right:130px;margin-right:0px" >
+        <figcaption style="text-align: center; margin-top: 5px;">
+          <p style="font-size: 18px;">Share Point</p>
+          <p  style="padding-top: 18px;">SharePoint (Online / On-premises) Development, </br>Integration, Deployment and Support</p>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div style="display: inline-block">
+      <figure>
+        <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Web-Applications-Centillion.png" height="100px" width="100px" style="margin-left:0px; padding-left: 100px ;" >
+        <figcaption style="text-align: center; margin-top: 5px; ">
+          <p  style="font-size: 18px;">Web Application Development</p>
+          <p  style="padding-top: 18px;">Portals, Websites, Business, Social and Financial</br> Applications.</p>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div style="display: inline-block; ">
+      <figure>
+        <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Mobile-Application-Centillion.png" height="100px" width="100px" style="padding-left: 100px; padding-right: 20px; margin-right: 0px;">
+        <figcaption style="text-align: center; margin-top: 5px;">
+          <p style="font-size: 18px";>Mobile Application Development</p>
+          <p style="padding-top: 18px;">iOS, Android, Cross-platform and </br>Hybrid Mobile Applications</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  </div>
+
+  <div style="margin-top: 60px;">
+    <div style="display: inline-block; margin-top: 8px; ">
+      <figure>
+        <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Office-365-Centillion.png" height="100px" width="100px"  style="margin-left:160px;padding-left:0px ;padding-right:130px;margin-right:0px" >
+        <figcaption style="text-align: center; margin-top: 5px;">
+          <p style="font-size: 18px;">Office 365</p>
+          <p  style="padding-top: 18px;">Deployment, Integration and Migration</p>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div style="display: inline-block">
+      <figure>
+        <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Power-BI.png" height="100px" width="100px" style="margin-left:0px; padding-left: 100px ;" >
+        <figcaption style="text-align: center; margin-top: 5px; padding-left: 20px;">
+          <p  style="font-size: 18px;">Power BI</p>
+          <p  style="padding-top: 18px;">Implementing and Managing Services for </br> Microsoft Power BIApplications.</p>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div style="display: inline-block; ">
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Bitrix24.png" height="100px" width="100px" style="padding-left: 130px; padding-right: 20px; margin-right: 0px;">
+        <figcaption style="text-align: center;padding-left: 40px; margin-top: 5px;">
+          <p style="font-size: 18px;">Bitrix24</p>
+          <p style="padding-top: 18px;">Migration and Integration social collaboration for </br> Small and Medium Enterprisess</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  </div>
+
+<!----STRATEGIC SOLUTIONS-->
+
+  <h2 style="text-align: center; margin-top: 110px; font-size: 34px;"><span style="color: #ffffff;">Strategic Solutions</span></h2>
+  <h4 style="text-align: center;font-weight: lighter; font-size: 20px; padding-left: 60px; padding-right: 60px;padding-top: 30px;"><span style="color: #d9d9d9;">Centillion Technology Systems offers strategic solutions products to connect our customers with their products with focusing on collaboration and intuit.</span></h4>      
+  <div><img width="500" height="400" src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-strategy-Solutions.png"  alt="" style="float:right;margin-top: 100px;" /></div>
+  <!--INCITE-->
+<div style="margin-top: 10px;">
+  <div style="display: inline-block; margin-top: 8px;">
+    <figure>
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Incite.png" height="100px" width="100px" style="margin-left: 100px; padding-left: 0px; padding-right: 100px; margin-right: 0px;">
+      <figcaption style="text-align: center; margin-top: 5px;">
+        <p style="font-size: 18px; padding-right: 20px;">Incite</p>
+        <p style="padding-top: 18px;">The Art of Visualization (Complete</br> Dashboard Solution with ETL Support)</p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div style="display: inline-block;">
+    <figure>
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/ignite.png" height="100px" width="100px" style="margin-left: 60px; padding-right: 100px;">
+      <figcaption style="text-align: left; margin-top: 5px;margin-left:20px">
+        <p style="font-size: 18px;margin-left: 50px;">Ignite</p>
+        <p style="padding-top: 18px;">Event Management System</p>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div style="margin-top: 10px;">
+  <div style="display: inline-block; margin-right: 0px;">
+    <figure>
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Ideas-on-Board.png" height="100px" width="100px" style="margin-left: 100px; padding-right: 100px;">
+      <figcaption style="text-align: left; margin-top: 5px; margin-left: 50px;">
+        <p style="font-size: 18px; margin-left: 30px;">Ideas on Board</p>
+        <p style="padding-top: 18px;">Ideas / Projects / Innovation</p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div style="display: inline-block;">
+    <figure>
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/InstaREM.png" height="100px" width="100px" style="margin-left: 50px; padding-right: 100px;">
+      <figcaption style="text-align: left; margin-top: 5px; margin-left: 20px;">
+        <p style="font-size: 18px; margin-left: 44px;">InstaREM</p>
+        <p style="padding-top: 18px;">Instant Reminder - Never forget any</br> Renewals (PRO Reminder App)</p>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<h2 style="text-align: center;margin-top:90px ;font-size: 30px;"><a href="https://centillion-ts.com/industries/" style="text-decoration: none;"><span style="color: #ffffff;">Industries we service</span></a></h2>
+<h4 style="text-align: center;color: #d9d9d9;padding-left:90px;padding-right: 90px;"><br />
+We deliver real value for your business through innovation and creativity in this highly complex and competitive environment.
+<br/><br/>
+Our expert team with its vast industry experience, applies technology strategically to transform and differentiate your business and
+enterprises from others, with reduced costs, risk management, and improved customer experience. No matter what
+industry you are from, we help you thrive.
+</h4>
+<img src="https://centillion-ts.com/wp-content/uploads/2016/03/Products-CTS-400.png" height=370" width="250" style="float:right;margin-top:50px;padding-left: 100px ;padding-right:200px;">
+
+<div style="margin-top: 10px;">
+<div style="display: inline-block; margin-right: 0px;">
+  <figure>
+    <img src="https://centillion-ts.com/wp-content/uploads/2016/03/Oil-and-Gas-e1458485530508-66x66.png" height="80px" width="80px" style="margin-left: 100px; padding-right: 30px;">
+    <figcaption style="text-align: left; margin-top: 5px; margin-left: 50px;">
+      <p style="font-size: 18px; margin-left: 30px;">Oil and Gas</p>
+    </figcaption>
+  </figure>
+</div>
+
+<div style="display: inline-block;">
+  <figure>
+    <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-TeleCommunications-e1458485595909.png" height="80px" width="80px" style="margin-left: 50px; padding-left: 40px;">
+    <figcaption style="text-align: left; margin-top: 5px; padding-left:10px">
+      <p style="font-size: 18px; margin-left: 44px;">TeleCommunications</p>
+    </figcaption>
+  </figure>
+</div>
+</div>
+
+<div style="margin-top: 10px;">
+  <div style="display: inline-block; margin-right: 0px;">
+    <figure>
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-Education-e1458485651899.png" height="80px" width="80px" style="margin-left: 100px; padding-right: 30px;">
+      <figcaption style="text-align: left; margin-top: 5px; margin-left: 50px;">
+        <p style="font-size: 18px; margin-left: 30px;">Education</p>
+      </figcaption>
+    </figure>
+  </div>
+  
+  <div style="display: inline-block;">
+    <figure>
+      <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-Loyalty-e1458485682580.png" height="80px" width="80px" style="margin-left: 50px; padding-left: 40px;">
+      <figcaption style="text-align: left; margin-top: 5px; padding-left:10px">
+        <p style="font-size: 18px; margin-left: 94px;;">Loyalty</p>
+      </figcaption>
+    </figure>
+  </div>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <div style="display: inline-block; margin-right: 0px;">
+      <figure>
+        <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-Enterprise-e1458485818627.png" height="80px" width="80px" style="margin-left: 100px; padding-right: 30px;">
+        <figcaption style="text-align: left; margin-top: 5px; margin-left: 50px;">
+          <p style="font-size: 18px; margin-left: 30px;">Enterprise</p>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div style="display: inline-block;">
+      <figure>
+        <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-Healthcare-e1458485717800.png" height="80px" width="80px" style="margin-left: 50px; padding-left: 40px;">
+        <figcaption style="text-align: left; margin-top: 5px; padding-left:10px">
+          <p style="font-size: 18px; margin-left: 44px;">Travel &amp; Tourism</p>
+        </figcaption>
+      </figure>
+    </div>
+    </div>
+  
+
+    <div style="margin-top: 10px;">
+      <div style="display: inline-block; margin-right: 0px;">
+        <figure>
+          <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-Healthcare-e1458485717800.png" height="80px" width="80px" style="margin-left: 100px; padding-right: 30px;">
+          <figcaption style="text-align: left; margin-top: 5px; margin-left: 50px;">
+            <p style="font-size: 18px; margin-left: 30px;">HealthCare</p>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div style="display: inline-block;">
+        <figure>
+          <img src="https://centillion-ts.com/wp-content/uploads/2016/03/CTS-Logistics-and-Transportation-e1458487148697-66x66.png" height="80px" width="80px" style="margin-left: 50px; padding-left: 40px;">
+          <figcaption style="text-align: left; margin-top: 5px; padding-left:10px">
+            <p style="font-size: 18px; margin-left: 44px;">Logistics &amp; Transportation</p>
+          </figcaption>
+        </figure>
+      </div>
+      </div>
+       
+      <div class="footer" style="background-color: #222222;">
+      <footer>
+            
+      <div style="display: inline-block;margin-bottom:100px;margin-top:2pxheight:488px;border-right: 1px solid grey;margin-left: 23px;padding-right: 60px;margin-right:50px">
+      <h4>
+        <img src="https://centillion-ts.com/wp-content/uploads/2023/01/Logo-Default-Full-Size-light-color-01.png">
+      </h4>
+      <p>Centillion is a recognized development </br>company with an aim to assist businesses </br>with product design, development,</br> and support.</p>
+            </div>
+          
+          
+          <div style="display: inline-block;border-right: 1px solid grey;margin-left: -3px;padding-right: 60px;">
+              <h4>Recent Posts</h4>
+              <ul>
+                <li><a href="https://centillion-ts.com/microsoft-365-and-azure/">How Microsoft 365 and Azure can improve </br> Productivity</a></li>
+                <hr>
+                <li><a href="https://centillion-ts.com/microsoft-power-app/">Business-related benefits of using Microsoft </br> Power Apps in 2023</a></li>
+                <hr>
+                <li><a href="https://centillion-ts.com/google-cloud-to-sharepoint/">Google Cloud to SharePoint Migration –</br> Best Practices</a></li>
+                <hr>
+                <li><a href="https://centillion-ts.com/spfx-overview/">SPFx Overview</a></li>
+                <hr>
+                <li><a href="https://centillion-ts.com/sharepoint-hybrid-implementation-overview/">SharePoint Hybrid Implementation – Overview</a></li>
+              </ul>
+            </div>
+         
+      
+        <div style="display: inline-block;margin-left: 0px ; height: 500px;margin-right:0px">
+              <h4>Contact Information</h4>
+              <p><strong>Australia</strong></p>
+              <p>1300 806 778</p>
+              <p>sales@centillion.au</p>
+              <p><strong>United Arab Emirates</strong></p>
+              <p>+971 2 6225999</p>
+              <p>sales@centillion-ts.com</p>
+        </div>
+         
+      <hr>
+                <p style="text-align: center;margin-top: 10px;font-weight: lighter;">Copyright © 2019 · All Rights Reserved · <a href="https://centillion-ts.com/">Centillion Technology Systems (CTS)</a></p>
+              
+      </footer>
+
+    </div>
+</body>
+</html>
+      
+      
+
+
+
+
+
+
+
+
+
