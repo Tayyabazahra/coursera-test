@@ -1,18 +1,4 @@
-/*
-===========================
-CONTENTS:
 
-01 General
-02 Typography
-03 Navbar
-04 section
-===========================
-
-*/
-
-/* =========================================================
-01. General
-============================================================ */
 body,
 html {
 	width: 100%;
@@ -21,9 +7,7 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-/* =========================================================
-02. Typography
-============================================================ */
+
 @import url('https://fonts.googleapis.com/css?family=Lato|Mina');
 p {
 	line-height: 1.6em;
@@ -45,18 +29,14 @@ h2 {
 	margin-bottom: 20px;
 }
 
-/* =========================================================
-03. Navbar
-============================================================ */
+/* NAVIGATION BAR */
 .navbar-brand{
    font-family: 'Mina', sans-serif;
    font-size: 28pt;
 
 }
 
-/* =========================================================
-03. Sections
-============================================================ */
+/* Sections */
 #chicken{
     background-image: url(../img/kirsty-tg-146655-unsplash.png);
     background-attachment: fixed;
@@ -91,5 +71,3 @@ h2 {
 .text-justify.bg-dark.p-2{
     opacity: 0.6;
 }
-
-/*end style*/
